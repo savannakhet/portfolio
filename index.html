@@ -96,13 +96,46 @@
       After warming up with a bowl of lobster bisque and navigating a temporary power outage at DC's annual Christmas Market, we stumbled across a vendor selling a pair of rings repurposed from war scraps that were Dropped + Made in Laos. And like the break tag, we found our space from something that was originally broken. </br></p5>
   </section>
 
+<div class="reveal-wrapper">
+  <img src="image1.jpg" alt="Original">
+  <img id="reveal" src="image2.jpg" alt="Revealed">
+  <input type="range" id="revealSlider" min="0" max="100">
+</div>
 
+.reveal-wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+.reveal-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#reveal {
+  clip-path: inset(0 100% 0 0); /* start fully hidden */
+  transition: clip-path .2s ease;
+}
+
+<script>
+document.getElementById('revealSlider').addEventListener('input', function() {
+  const pct = this.value;
+  document.getElementById('reveal').style.clipPath = 
+    `inset(0 ${100-pct}% 0 0)`;
+});
+</script>
+
+  
+
+    
   <footer>
     &copy; 2025 Sabaidee World. All rights reserved.
   </footer>
 
 </body>
 </html>
+
 
 
 
