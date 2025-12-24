@@ -39,13 +39,33 @@
       border-radius: 8px;
     }
     footer {
-      text-align: center;
+      text-align: left;
       padding: 2rem;
       background: #1a1a1a;
       color: white;
     }
+
+	  .reveal{
+	width: 280px;
+	height: 280px;
+	border:#000 1px solid;
+	float:left;
+	margin:24px;
+}
+.reveal > img{
+	position:absolute;
+}
+.reveal > .img2{
+	clip:rect(0px, 140px, 280px, 0px); /* top, right, bottom, left */ 
+}
+.reveal > .activator{
+	position:absolute;
+	width:280px;
+	height:280px;
+	opacity:0;
+	cursor: e-resize;
+}
   </style>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -100,26 +120,7 @@
 
     <p1><b>December 23, 2025</b></p1>
 <style>
-.reveal{
-	width: 280px;
-	height: 280px;
-	border:#000 1px solid;
-	float:left;
-	margin:24px;
-}
-.reveal > img{
-	position:absolute;
-}
-.reveal > .img2{
-	clip:rect(0px, 140px, 280px, 0px); /* top, right, bottom, left */ 
-}
-.reveal > .activator{
-	position:absolute;
-	width:280px;
-	height:280px;
-	opacity:0;
-	cursor: e-resize;
-}
+
 </style>
 <script>
 function reveal(event){
@@ -150,6 +151,7 @@ function reveal(event){
   </footer>
 	  </body>
 </html>
+
 
 
 
