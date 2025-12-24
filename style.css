@@ -18,3 +18,29 @@
   opacity: 1;
 }
 
+.gallery img {
+  opacity: 0; /* Hide both images initially */
+  position: absolute; /* Allow positioning with percentages */
+}
+
+#reveal {
+  opacity: 1; /* Show the revealed image */
+}
+
+/* Style the range slider */
+#revealSlider {
+  width: 300px; 
+  margin-top: 1rem; 
+}
+
+/* Use a pseudo-class to apply styles based on the slider value */
+.gallery img { /* Apply to all images in the .gallery */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity changes */
+}
+
+.gallery img:nth-child(2) { /* Target the second image (id="reveal") */
+  opacity: calc(var(--sliderValue) / 100); /* Adjust opacity based on slider value */
+}
+
+
+
