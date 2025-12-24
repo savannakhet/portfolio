@@ -1,27 +1,4 @@
-.image-reveal {
-  position: relative; /* Required for positioning the image */
-}
 
-.image-reveal img {
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Make sure the image fills the div */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.5s ease; /* Smooth fade-in effect */
-}
-
-/* Trigger the reveal on hover */
-.image-reveal:hover img {
-  opacity: 1;
-}
-
-.gallery img {
-  opacity: 0; /* Hide both images initially */
-  position: absolute; /* Allow positioning with percentages */
-}
 
 #reveal {
   opacity: 1; /* Show the revealed image */
