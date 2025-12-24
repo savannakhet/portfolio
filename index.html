@@ -25,7 +25,7 @@
     }
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 500px;
       margin: auto;
     }
     h2 {
@@ -45,8 +45,8 @@
       color: white;
     }
 	  .reveal{
-	width: 1000px;
-	height: 1000px;
+	width: 500px;
+	height: 500px;
 	border:#000 1px solid;
 	float:left;
 	margin:24px;
@@ -55,12 +55,12 @@
 	position:absolute;
 }
 .reveal > .img2{
-	clip:rect(0px, 1000px, 1000px, 0px); /* top, right, bottom, left */ 
+	clip:rect(0px, 500px, 500px, 0px); /* top, right, bottom, left */ 
 }
 .reveal > .activator{
 	position:relative;
-	width:1000px;
-	height:1000px;
+	width:500px;
+	height:500px;
 	opacity:0;
 	cursor: e-resize;
 }
@@ -123,7 +123,7 @@
 </style>
 <script>
 function reveal(event){
-    event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 280px, 0px)";  
+    event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 500px, 0px)";  
 }
 </script>
 </head>
@@ -150,6 +150,7 @@ function reveal(event){
   </footer>
 	  </body>
 </html>
+
 
 
 
